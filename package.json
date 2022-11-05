@@ -25,7 +25,7 @@
     "lint": "vue-cli-service lint",
     "build-library": "vue-cli-service build --target lib --name vue-dropdown-search-menu ./src/install.js"
   },
-  "main": ".dist/vue-dropdown-search-menu.common.js",
+  "main": "./dist/vue-dropdown-search-menu.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "sass-loader": "^10",
