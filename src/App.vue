@@ -1,21 +1,21 @@
 <template>
   <div id="app">
    
-    <DropdownSearchMenu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
+    <!-- <DropdownSearchMenu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
      
         <button @click="menu = true">Button </button>  
   
-    </DropdownSearchMenu>
+    </DropdownSearchMenu> -->
   </div>
 </template>
 
 <script>
-import DropdownSearchMenu from './components/DropdownSearchMenu.vue';
+// import DropdownSearchMenu from './components/DropdownSearchMenu.vue';
 
 export default {
   name: 'App',
   components: {
-    DropdownSearchMenu
+   // DropdownSearchMenu
   },
   data(){
     return{

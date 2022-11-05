@@ -2,7 +2,7 @@
   <div class="vdm-menu-container">
     <slot></slot>
     <div v-if="menu" class="vdm-dropdown-menu-container">
-        <div class="vdm-menu-list">
+        <div class="vdm-menu">
             <div class="vdm-menu-header">
                 <div class="vdm-menu-search">
                     <div class="vdm-menu-search-icon">
@@ -126,7 +126,7 @@ export default {
     max-height: calc(100vh - 20px);
     overflow-y: auto;
 }
-.vdm-menu-list {
+.vdm-menu {
     display: flex;
     flex-direction: column;
     min-width: 280px;
@@ -142,6 +142,7 @@ export default {
     position: relative;
     align-items: center;
     width: 100%;
+    border-bottom: 1px solid #f4f4f4;
 }
 .vdm-menu-search-input{
     width: 100%;
@@ -153,8 +154,7 @@ export default {
     padding: 16px 44px 15px 20px;
     color: #2a2e34;
     border: none;
-    border-bottom: 1px solid #f4f4f4;
-    margin: 0 0 -1px;
+    margin: 0 0 0px;
 }
 .vdm-menu-search-input:focus{
     outline: none;
