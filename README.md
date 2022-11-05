@@ -22,7 +22,7 @@ Vue.use(VueDropdownMenuSearch)
 <template>
   <div id="app">
    
-    <dropdown-search-menu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
+    <dropdown-search-menu  v-model="selected" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
         <button @click="menu = true">Button </button>  
     </dropdown-search-menu>
   </div>
@@ -32,7 +32,7 @@ Vue.use(VueDropdownMenuSearch)
 export default {
   data(){
     return{
-      message:null,
+      selected:null,
       menu:false,
       list:[
         {
