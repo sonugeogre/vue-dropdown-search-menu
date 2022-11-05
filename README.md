@@ -1,4 +1,5 @@
 # vue-dropdown-menu-search
+An vue components  which can use for drop down seach menu
 
 ## Install
 ```
