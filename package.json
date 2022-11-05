@@ -1,23 +1,31 @@
 {
   "name": "vue-dropdown-menu-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "author": {
-      "name": "Sonu George",
-      "email": "punnakkal.sonu@gmail.com"
+    "name": "Sonu George",
+    "email": "punnakkal.sonu@gmail.com"
   },
   "repository": "https://github.com/sonugeogre/vue-dropdown-search-menu",
   "bugs": "https://github.com/sonugeogre/vue-dropdown-search-menu/issues",
-  "keywords": ["vue", "dropdown", "menu", "search", "dropdown search"],
+  "keywords": [
+    "vue",
+    "dropdown",
+    "menu",
+    "search",
+    "dropdown search"
+  ],
   "license": "MIT",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-library" : "vue-cli-service build --target lib --name vue-dropdown-search-menu ./src/install.js"
+    "build-library": "vue-cli-service build --target lib --name vue-dropdown-search-menu ./src/install.js"
   },
-  "main" : ".dist/vue-dropdown-search-menu.common.js",
+  "main": ".dist/vue-dropdown-search-menu.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "sass-loader": "^10",
