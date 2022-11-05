@@ -4,6 +4,12 @@
 ```
 npm i vue-dropdown-menu-search
 ```
+
+![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/static/1.png?raw=true)
+![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/static/2.png?raw=true)
+
+
+
 ## Use 
 
 main.js
@@ -57,4 +63,4 @@ export default {
 </script>
 
 ```
-
+For without image list don't pass `img` key in array
