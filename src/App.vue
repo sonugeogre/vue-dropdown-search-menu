@@ -1,17 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   
+    <DropdownSearchMenu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
+     
+        <button @click="menu = true">Button </button>  
+  
+    </DropdownSearchMenu>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DropdownSearchMenu from './components/DropdownSearchMenu.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    DropdownSearchMenu
+  },
+  data(){
+    return{
+      message:null,
+      menu:false,
+      list:[
+        {
+          id:1,
+          name:'Foo',
+          img:'https://i.ibb.co/Xy9cgc4/Avatar-Maker-1.png'
+        },
+        {
+          id:2,
+          name:'Bar',
+          img:'https://i.ibb.co/Xy9cgc4/Avatar-Maker-1.png'
+        },
+        {
+          id:3,
+          name:'baz',
+          img:'https://i.ibb.co/Xy9cgc4/Avatar-Maker-1.png'
+        }
+      ]
+    }
   }
 }
 </script>
@@ -19,10 +46,6 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
