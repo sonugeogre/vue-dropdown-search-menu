@@ -5,8 +5,8 @@
 npm i vue-dropdown-menu-search
 ```
 
-![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/static/1.png?raw=true)
-![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/static/2.png?raw=true)
+![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/blob/main/static/1.png)
+![alt text](https://github.com/sonugeogre/vue-dropdown-search-menu/blob/main/static/2.png)
 
 
 
