@@ -1,7 +1,7 @@
 <template>
   <div id="app">
    
-    <DropdownSearchMenu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
+    <DropdownSearchMenu  v-model="message" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false" :onButtonMenu="false">
      
         <button class="add-btn" @click="menu = true">+ </button>  
   

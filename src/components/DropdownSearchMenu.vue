@@ -64,24 +64,14 @@ export default {
         return{
             menuItem:[],
             search:'',
-            key:false,
             selected_item:null
         }
     },
     methods:{
-        isSelected(i){
-            console.log(i);
-        },
         closeMenu (e) {
-          if(this.key){
             if (!this.$el.contains(e.target)) {
                 this.$emit('close');
-                this.key = !this.key;
             }
-          }else{
-            this.key = !this.key;
-          }
-            
         },
         selectItem(item){
             this.$emit('change', item[this.returnValue])
