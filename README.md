@@ -1,4 +1,5 @@
 # vue-dropdown-menu-search
+An vue components  which can use for drop down seach menu
 
 ## Install
 ```
@@ -28,7 +29,15 @@ Vue.use(VueDropdownMenuSearch)
 <template>
   <div id="app">
    
-    <dropdown-search-menu  v-model="selected" :menu='menu' :list="list" displayItem="name" returnValue="id" @close="menu = false">
+    <dropdown-search-menu  
+      v-model="selected"
+      :menu='menu'
+      :list="list"
+      displayItem="name"
+      returnValue="id"
+      @close="menu = false"
+      >
+      //you can use your own buttons
         <button @click="menu = true">Button </button>  
     </dropdown-search-menu>
   </div>
@@ -63,4 +72,15 @@ export default {
 </script>
 
 ```
+
+# props
+| Property             | Type          | Description                                                   |
+| -------------------- |:-------------:| :-------------------------------------------------------------:
+| menu                 | boolean       | Show or hide for dropdown                                     |
+| list                 | array         | Dropdown list items array                                     |
+| displayItem          | string        | Displaying key in list                                        |
+| returnValue          | string        | selected item return value key                                |
+
+event `@close` used for closing the dropdown menu
+
 For without image list don't pass `img` key in array
